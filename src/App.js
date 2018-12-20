@@ -3,7 +3,7 @@ import './App.css';
 
 // import Container from './components/Container/Container';
 // import Row from './components/Row/Row';
-// import Content from './components/Content/Content';
+import BookNowBtn from './components/BookNowBtn/BookNowBtn';
 import ParallaxWindow from './components/ParallaxWindow/ParallaxWindow';
 import Gallery, { propsGallery } from './components/Gallery/Gallery'
 
@@ -37,6 +37,7 @@ class App extends Component {
         <br/>
         <br/>
         <br/>
+        <BookNowBtn/>
         <br/>
         <ParallaxWindow 
           side="cut-right" 
