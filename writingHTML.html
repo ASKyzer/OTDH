@@ -1,0 +1,32 @@
+<div class="col-md-6">
+    <div class="container-fluid">
+      <h3 class="font-weight-bold">{props.title}</h3>
+      <hr />
+      <div class="row">
+        <div class="col-md-4 col-sm-6" data-toggle="modal" data-target="#modal">
+          <a href={props.lightboxId} data-slide-to={props.imageIndex}><img src={props.image} class="gallery-img img-fluid my-2"></a>
+        </div>
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="Lightbox Gallery by Bootstrap 4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div id={props.id} class="carousel slide" data-ride="carousel" data-interval="5000" data-keyboard="true">
+                <ol class="carousel-indicators">
+                  <li data-target={props.lightboxId} data-slide-to={props.imageIndex}></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active"><img src={props.image} class="w-100" alt=""></div>
+                  </div>
+                <a class="carousel-control-prev" href={props.lightboxId} role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                <a class="carousel-control-next" href={props.lightboxId} role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+              </div>
+              <a class="carousel-control-prev" href={props.lightboxId} role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+              <a class="carousel-control-next" href={props.lightboxId} role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
